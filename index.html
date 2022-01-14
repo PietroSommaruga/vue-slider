@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue slider</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <div class="container">
+            
+                <div class="flex">
+                    <div @click="prevImg" class="left-arrow">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>  
+                </div>
+                
+                    <img :src=" `${img[currentIndex]}` " alt="">
+
+                <div class="flex">
+                    <div @click="nextImg" class="right-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>    
+        </div>
+ 
+        <!-- ----- counter-img ----- -->
+        <div class="counter-img-container">
+            <div :class="['counter-img',  i === currentIndex ? 'active':'']" v-for="(x, i) in img"></div>
+        </div>
+            
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

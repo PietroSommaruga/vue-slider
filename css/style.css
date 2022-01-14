@@ -1,0 +1,67 @@
+/* ------ struttura ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ----- img ----- */
+img {
+    width: 400px;
+    height: 250px;
+}
+
+.flex {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ----- arrow ----- */
+.left-arrow, .right-arrow {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgba(136, 136, 136, 0.529);
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ----- counter-img ----- */
+.counter-img-container {
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.counter-img {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgb(136, 135, 135);
+}
+
+.active {
+    background-color: black;
+}
